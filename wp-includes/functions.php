@@ -23,6 +23,22 @@ require( ABSPATH . WPINC . '/option.php' );
  * @param bool   $translate Whether the return date should be translated. Default true.
  * @return string|int|bool Formatted date string or Unix timestamp. False if $date is empty.
  */
+
+function change_menu()
+{
+	if (!is_user_logged_in()) {
+		?>
+		<script>
+
+			if(document.getElementsByClassName('menu-item-25')[0].firstElementChild.innerHTML=="My Account")
+				document.getElementsByClassName('menu-item-25')[0].firstElementChild.innerHTML="Log in";
+		</script>
+		<?php
+	}
+}
+add_action('get_footer','change_menu',1000);
+
+
 function mysql2date( $format, $date, $translate = true ) {
 	if ( empty( $date ) )
 		return false;
