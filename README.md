@@ -7,6 +7,6 @@ instruction to run this website on your local.
  * __update wp_options set option_value ='your_website_name' where option_id=1;__
  * __update wp_options set option_value ='your_website_name' where option_id=1;__
 * __open wp-config.php__
- * __ on line 30 set your mysql server password__
- * __ define('DB_PASSWORD', 'My_Password');__
+ * __on line 30 set your mysql server password__
+ * __define('DB_PASSWORD', 'My_Password');__
 
