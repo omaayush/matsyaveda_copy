@@ -6,7 +6,7 @@ instruction to run this website on your local.
 * __run followoing queries on matsyaveda database__
  * __update wp_options set option_value ='your_website_name' where option_id=1;__
  * __update wp_options set option_value ='your_website_name' where option_id=1;__
-* __open wp-config.php __
+* __open wp-config.php__
  * __ on line 30 set your mysql server password__
  * __ define('DB_PASSWORD', 'My_Password');__
 
